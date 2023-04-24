@@ -1,9 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "@/styles/Home.module.css";
 import Hero from "@/components/home/hero";
 import FeaturePosts from "@/components/home/featured-posts";
-import { useEffect } from "react";
 import { getFeaturedPosts } from "../../helpers/posts-util";
 
 export default function HomePage({ posts }) {

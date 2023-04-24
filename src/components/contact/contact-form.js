@@ -43,14 +43,14 @@ export default function ContactForm() {
         message: enteredMessage,
       });
       setRequestStatus("success");
+
+      setEnteredEmail("");
+      setEnteredName("");
+      setEnteredMessage("");
     } catch (error) {
       setRequestError(error);
       setRequestStatus("error");
     }
-
-    setEnteredEmail("");
-    setEnteredName("");
-    setEnteredMessage("");
   };
 
   let notification;
