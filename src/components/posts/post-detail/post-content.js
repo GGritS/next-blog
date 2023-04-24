@@ -34,6 +34,7 @@ export default function PostContent({ post }) {
           </div>
         );
       }
+
       return <p>{paragraph.children}</p>;
     },
   };
